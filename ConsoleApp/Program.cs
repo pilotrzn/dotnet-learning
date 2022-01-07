@@ -1,12 +1,14 @@
-﻿using System;
+﻿using LearnRepository.Data.Class;
+using System;
 
 namespace ConsoleApp
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Hello World!");
+            MainClass mainClass;
+
         }
     }
 }
