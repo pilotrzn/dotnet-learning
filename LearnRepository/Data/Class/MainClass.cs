@@ -5,7 +5,9 @@ using Models.Data.Class;
 
 namespace LearnRepository.Data.Class
 {
-    public class MainClass
+    public static class MainClass
     {
+
+
     }
 }
