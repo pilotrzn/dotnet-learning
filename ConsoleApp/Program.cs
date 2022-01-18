@@ -13,12 +13,14 @@ namespace ConsoleApp
             var units = Unit.GetUnits();
             Console.WriteLine($"Количество установок = {units.Length}");
 
-            var unit = Unit.FindUnit(tanks,"Резервуар 2");
+            var unit = Unit.FindUnit(tanks, "Резервуар 2");
             var unitl = Unit.FindUnitLinq(tanks, "Резервуар 2");
             var factory = Factory.FindFactory(unitl);
 
             //вывод всех ререзвуаров
             Tank.TankInfo();
+            var mass = Tank.TankMass();
+            Console.WriteLine($"Общая масса резервуаров = {mass}");
         }
     }
 }
