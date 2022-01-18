@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 using System.Text;
 
@@ -41,6 +42,10 @@ namespace Models.Data.Class
             }
         }
 
+        public static double TankMass()
+        {
+            return GetTank().Sum(x => x.Volume);
+        }
 
     }
 }
